@@ -12,6 +12,7 @@ BOOL CALLBACK MSesGCallback(LONG lCommand, NET_DVR_ALARMER *pAlarmer, char *pAla
 	{
 	case COMM_ALARM_ACS://门禁主机报警信息 
 	{
+		int i;
 		NET_DVR_ACS_ALARM_INFO struAcsAlarmInfo = { 0 };
 		memcpy(&struAcsAlarmInfo, pAlarmInfo, sizeof(struAcsAlarmInfo));    //按需处理报警信息结构体中的信息...... 
 		break;

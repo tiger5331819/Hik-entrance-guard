@@ -73,11 +73,14 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(IncludePath)</IncludePath>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IncludePath>I:\苏琥元\GitHub\tiger5331819\Point-Cloud-Hik-entrance-guard\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>I:\苏琥元\GitHub\tiger5331819\Point-Cloud-Hik-entrance-guard\lib;I:\苏琥元\GitHub\tiger5331819\Point-Cloud-Hik-entrance-guard\lib\HCNetSDKCom;$(LibraryPath)</LibraryPath>
+    <OutDir>..\lib</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>I:\苏琥元\GitHub\tiger5331819\Point-Cloud-Hik-entrance-guard\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>I:\苏琥元\GitHub\tiger5331819\Point-Cloud-Hik-entrance-guard\lib\HCNetSDKCom;I:\苏琥元\GitHub\tiger5331819\Point-Cloud-Hik-entrance-guard\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -107,13 +110,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
